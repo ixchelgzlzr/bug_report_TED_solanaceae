@@ -1,0 +1,113 @@
+#NEXUS
+
+BEGIN DATA;
+  DIMENSIONS NTAX=102 NCHAR=17;
+  FORMAT DATATYPE=STANDARD MISSING=? GAP=- INTERLEAVE=NO symbols="0123456789";
+  MATRIX
+	f_Eophysaloides_inflata                 ???????0011110110
+	f_Lycianthoides_calycina                ???????002000?011
+	f_Physalis_hunickenii                   ???????11111?0110
+	f_Physalis_infinemundi                  ???????1111110110
+	UF6500_Nephrosemen_reticulatus          10?1000??????????
+	V_40891_Solanispermum_reniforme         00?1000??????????
+	V_40898_Solanum_arnense                 10?1100??????????
+	CCN6065_second_seed_Capsicum_pliocenicum 00?0000??????????
+	H4895_Hyoscyamus_undulatus              01?0100??????????
+	K453A_Hyoscyamus_datureoides            00?1101??????????
+	K528_Solanum_miocenicus                 00??100??????????
+	K530_Solanoides_dorofeevii              00?0100??????????
+	K587B_Solanum_foveolatum                00?1100??????????
+	2003_0073_Nicotianosemen_minuta         01?0000??????????
+	Alkekengi_officinarum                   00011001111110110
+	Anisodus_tanguticus                     01?01000001115110
+	Anthotroche_pannosa                     10100000011001010
+	Archiphysalis_chamaesarachoides         00001000111110110
+	Athenaea_brasiliana                     000?0000010000010
+	Atropa_belladonna                       01201000011100010
+	Atropanthe_sinensis                     10200000011115110
+	Benthamiella_patagonica                 10011000011001010
+	Bouchetia_anomala                       10100000001111010
+	Browallia_americana                     10101000011111010
+	Brugmansia_suaveolens                   00001000011000000
+	Brunfelsia_australis                    10100000011001000
+	Calliphysalis_carpenteri                00?01000011110110
+	Capsicophysalis_potosina                00001000011100010
+	Capsicum_chacoense                      00211000021100011
+	Cestrum_bracteatum                      10100000011000010
+	Chamaesaracha_arida                     00200000001000010
+	Coeloneurum_ferrugineum                 10101000001003010
+	Combera_paradoxa                        10000000011101010
+	Crenidium_spinescens                    10100000000001010
+	Cyphanthera_anthocercidea               10100000001001010
+	Darcyanthus_spruceanus                  00001000001100010
+	Datura_ferox                            00211010011001000
+	Deprea_pauciflora                       00001001111110110
+	Discopodium_penninervium                00011000000000010
+	Duboisia_myoporoides                    10110001001000010
+	Duckeodendron_cestroides                10001000000003010
+	Dunalia_brachyacantha                   00001000011000010
+	Dyssochroma_viridiflorum                10101000011100010
+	Eriolarynx_australis                    00011000011000010
+	Espadaea_amoena                         10100000011003010
+	Exodeconus_miersii                      00011000011004010
+	Fabiana_imbricata                       10100000011001010
+	Goetzea_elegans                         11101000011003010
+	Grammosolen_dixonii                     10100000011001010
+	Heteranthia_decipiens                   10101000011001010
+	Hunzikeria_texana                       10001000011111010
+	Hyoscyamus_niger                        01201000011115010
+	Iochroma_cyaneum                        00001000011000010
+	Jaborosa_laciniata                      00011000011100010
+	Jaltomata_grandiflora                   00011000011000010
+	Juanulloa_mexicana                      10001000111000010
+	Latua_pubiflora                         10000000011000010
+	Leptoglossis_darcyana                   10100000001001010
+	Leucophysalis_grandiflora               00200000011110010
+	Lycianthes_rantonnetii                  01201000020000011
+	Lycium_americanum                       00011000011000010
+	Mandragora_officinarum                  01210000001100010
+	Markea_coccinea                         10101000011100010
+	Melananthus_guatemalensis               10100000011001010
+	Mellissia_begoniifolia                  00?10000001000010
+	Merinthopodium_neuranthum               10101000011000010
+	Nectouxia_formosa                       00210000011000010
+	Nicandra_physalodes                     00200001111100110
+	Nicotiana_wigandioides                  10111000011001010
+	Nierembergia_linariifolia               11100000011111010
+	Nolana_divaricata                       10001000000002010
+	Nothocestrum_latifolium                 00200000011100010
+	Oryctes_nevadensis                      00210100011104010
+	Pantacantha_ameghinoi                   10011000011001010
+	Petunia_interior                        11100000011101010
+	Physaliastrum_heterophyllum             00001000011100010
+	Physalis_peruviana                      00001001111110110
+	Physalis_angulata                       00201001111110110
+	Physochlaina_orientalis                 01211000011115110
+	Plowmania_nyctaginoides                 10100000011111010
+	Protoschwenkia_mandonii                 10001000011001010
+	Quincula_lobata                         00210001111100110
+	Reyesia_chilensis                       10210000011111010
+	Salpichroa_tristis                      00211000011000010
+	Salpiglossis_sinuata                    10201000001111010
+	Saracha_quitensis                       00010000011000010
+	Schizanthus_grahamii                    10011000011101010
+	Schraderanthus_viscosus                 00000000011100110
+	Schultesianthus_leucanthus              10011000010000010
+	Sclerophylax_spinescens                 10111000011002010
+	Scopolia_carniolica                     01001000001115010
+	Sessea_stipulata                        00100100011001010
+	Solandra_grandiflora                    00010000011000010
+	Solanum_pinnatum                        00200000011000010
+	Streptosolen_jamesonii                  10100000011111010
+	Symonanthus_aromaticus                  10100000011001010
+	Trompettia_cardenasiana                 10001000011000000
+	Tsoala_tubiflora                        10?01000011001010
+	Tubocapsicum_anomalum                   00010000020000010
+	Tzeltalia_amphitricha                   00011000111110110
+	Vassobia_breviflora                     00001000011000010
+	Vestia_foetida                          10100000011001010
+
+;
+
+END;
+

@@ -1,0 +1,1382 @@
+#NEXUS
+[written Tue Jul 30 14:42:14 MDT 2024 by Mesquite  version 3.61 (build 927) at EBIO-FAC-L-083.local/192.168.0.7]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=148;
+	TAXLABELS
+		'f_Eophysaloides_inflata' 'f_Lycianthoides_calycina' 'f_Physalis_hunickenii' 'f_Physalis_infinemundi' 'UF6500_Nephrosemen_reticulatus' 'V_40891_Solanispermum_reniforme' 'V_40898_Solanum_arnense' 'CCN6065_second_seed_Capsicum_pliocenicum' 'H4895_Hyoscyamus_undulatus' 'K453A_Hyoscyamus_datureoides' 'K528_Solanum_miocenicus' 'K530_Solanoides_dorofeevii' 'K587B_Solanum_foveolatum' '2003_0073_Nicotianosemen_minuta' 'Alkekengi_officinarum' 'Anisodus_tanguticus' 'Anthocercis_intricata' 'Anthotroche_pannosa' 'Archiphysalis_chamaesarachoides' 'Athenaea_brasiliana' 'Athenaea_cuspidata' 'Atropa_belladonna' 'Atropanthe_sinensis' 'Benthamiella_patagonica' 'Bouchetia_anomala' 'Brachistus_nelsonii' 'Browallia_americana' 'Brugmansia_suaveolens' 'Brunfelsia_australis' 'Calibrachoa_humilis' 'Calliphysalis_carpenteri' 'Capsicophysalis_potosina' 'Capsicum_chacoense' 'Cestrum_bracteatum' 'Chamaesaracha_arida' 'Coeloneurum_ferrugineum' 'Combera_paradoxa' 'Crenidium_spinescens' 'Cuatresia_harlingiana' 'Cyphanthera_anthocercidea' 'Darcyanthus_spruceanus' 'Datura_ferox' 'Deprea_pauciflora' 'Deprea_abra_patriciae' 'Discopodium_penninervium' 'Duboisia_myoporoides' 'Duckeodendron_cestroides' 'Dunalia_brachyacantha' 'Dyssochroma_viridiflorum' 'Eriolarynx_australis' 'Espadaea_amoena' 'Exodeconus_miersii' 'Fabiana_imbricata' 'Goetzea_elegans' 'Grammosolen_dixonii' 'Hawkesiophyton_panamense' 'Heteranthia_decipiens' 'Hunzikeria_texana' 'Hyoscyamus_niger' 'Iochroma_cyaneum' 'Jaborosa_laciniata' 'Jaltomata_bicolor' 'Jaltomata_grandiflora' 'Juanulloa_mexicana' 'Latua_pubiflora' 'Leptoglossis_darcyana' 'Leucophysalis_grandiflora' 'Lycianthes_rantonnetii' 'Lycianthes_acapulcensis' 'Lycium_americanum' 'Mandragora_officinarum' 'Markea_coccinea' 'Melananthus_guatemalensis' 'Mellissia_begoniifolia' 'Merinthopodium_neuranthum' 'Metternichia_princeps' 'Nectouxia_formosa' 'Nicandra_physalodes' 'Nicotiana_wigandioides' 'Nierembergia_linariifolia' 'Nolana_divaricata' 'Nothocestrum_latifolium' 'Oryctes_nevadensis' 'Pantacantha_ameghinoi' 'Petunia_interior' 'Physaliastrum_heterophyllum' 'Physalis_peruviana' 'Physalis_angulata' 'Physochlaina_orientalis' 'Plowmania_nyctaginoides' 'Protoschwenkia_mandonii' 'Przewalskia_tangutica' 'Quincula_lobata' 'Reyesia_chilensis' 'Salpichroa_tristis' 'Salpiglossis_sinuata' 'Saracha_quitensis' 'Schizanthus_grahamii' 'Schraderanthus_viscosus' 'Schultesianthus_leucanthus' 'Schwenckia_americana' 'Sclerophylax_spinescens' 'Scopolia_carniolica' 'Sessea_stipulata' 'Solandra_grandiflora' 'Solanum_annuum' 'Solanum_barbisetum' 'Solanum_caripense' 'Solanum_corymbosum' 'Solanum_crinitum' 'Solanum_crispum' 'Solanum_evolvulifolium' 'Solanum_evolvuloides' 'Solanum_herculeum' 'Solanum_hieronymi' 'Solanum_jamaicense' 'Solanum_laciniatum' 'Solanum_mahoriense' 'Solanum_microdontum' 'Solanum_montanum' 'Solanum_oedipus' 'Solanum_palustre' 'Solanum_peruvianum' 'Solanum_polygamum' 'Solanum_salamancae' 'Solanum_sejunctum' 'Solanum_sinuatirecurvum' 'Solanum_sisymbriifolium' 'Solanum_terminale' 'Solanum_thelopodium' 'Solanum_torvum' 'Solanum_trizygum' 'Solanum_uncinellum' 'Solanum_valdiviense' 'Solanum_weddellii' 'Solanum_pimpinellifolium' 'Solanum_pinnatum' 'Streptosolen_jamesonii' 'Symonanthus_aromaticus' 'Trompettia_cardenasiana' 'Trozelia_umbellata' 'Tsoala_tubiflora' 'Tubocapsicum_anomalum' 'Tzeltalia_amphitricha' 'Vassobia_breviflora' 'Vestia_foetida' 'Withania_somnifera' 'Witheringia_solanacea' 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Discrete;
+	DIMENSIONS  NCHAR=17;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9";
+	CHARSTATELABELS 
+		1 compression /  flattened not_flattened,
+		2 'hilum_position' /  lateral terminal,
+		3 embryo /  curved straight coiled,
+		4 cavity /  absent present,
+		5 'testal_walls' /  straight sinuate,
+		6 wings /  absent present,
+		7 elaiosomes /  absent present,
+		8 'base_invaginated' /  absent present,
+		9 angled /  absent present,
+		10 'lobe_sinus' /  rounded angular absent,
+		11 'widest_veins' /  absent present,
+		12 'secondary_veins' /  absent present,
+		13 'secondary_veins_fork' /  absent present,
+		14 'fruit_type' /  berry capsule 'diclesium/mericarp' drupe 'non-capsular dehiscent' pyxidium,
+		15 'calyx_inflated' /  absent present,
+		16 'venation_pattern' /  parallelodromus other,
+		17 'calyx_teeth' /  absent present ; 
+	MATRIX
+	'f_Eophysaloides_inflata'                 ???????0011110110
+	'f_Lycianthoides_calycina'                ???????002000?011
+	'f_Physalis_hunickenii'                   ???????11111?0110
+	'f_Physalis_infinemundi'                  ???????1111110110
+	'UF6500_Nephrosemen_reticulatus'          10?1000??????????
+	'V_40891_Solanispermum_reniforme'         00?1000??????????
+	'V_40898_Solanum_arnense'                 10?1100??????????
+	'CCN6065_second_seed_Capsicum_pliocenicum'00?0000??????????
+	'H4895_Hyoscyamus_undulatus'              01?0100??????????
+	'K453A_Hyoscyamus_datureoides'            00?1101??????????
+	'K528_Solanum_miocenicus'                 00??100??????????
+	'K530_Solanoides_dorofeevii'              00?0100??????????
+	'K587B_Solanum_foveolatum'                00?1100??????????
+	'2003_0073_Nicotianosemen_minuta'         01?0000??????????
+	'Alkekengi_officinarum'                   00011001111110110
+	'Anisodus_tanguticus'                     01?01000001115110
+	'Anthocercis_intricata'                   10100000001001010
+	'Anthotroche_pannosa'                     10100000011001010
+	'Archiphysalis_chamaesarachoides'         00001000111110110
+	'Athenaea_brasiliana'                     000?0000010000010
+	'Athenaea_cuspidata'                      00000000011100110
+	'Atropa_belladonna'                       01201000011100010
+	'Atropanthe_sinensis'                     10200000011115110
+	'Benthamiella_patagonica'                 10011000011001010
+	'Bouchetia_anomala'                       10100000001111010
+	'Brachistus_nelsonii'                     00000000011110110
+	'Browallia_americana'                     10101000011111010
+	'Brugmansia_suaveolens'                   00001000011000000
+	'Brunfelsia_australis'                    10100000011001000
+	'Calibrachoa_humilis'                     10100000011111010
+	'Calliphysalis_carpenteri'                00?01000011110110
+	'Capsicophysalis_potosina'                00001000011100010
+	'Capsicum_chacoense'                      00211000021100011
+	'Cestrum_bracteatum'                      10100000011000010
+	'Chamaesaracha_arida'                     00200000001000010
+	'Coeloneurum_ferrugineum'                 10101000001003010
+	'Combera_paradoxa'                        10000000011101010
+	'Crenidium_spinescens'                    10100000000001010
+	'Cuatresia_harlingiana'                   00011000001000010
+	'Cyphanthera_anthocercidea'               10100000001001010
+	'Darcyanthus_spruceanus'                  00001000001100010
+	'Datura_ferox'                            00211010011001000
+	'Deprea_pauciflora'                       00001001111110110
+	'Deprea_abra_patriciae'                   00011000111100110
+	'Discopodium_penninervium'                00011000000000010
+	'Duboisia_myoporoides'                    10110001001000010
+	'Duckeodendron_cestroides'                10001000000003010
+	'Dunalia_brachyacantha'                   00001000011000010
+	'Dyssochroma_viridiflorum'                10101000011100010
+	'Eriolarynx_australis'                    00011000011000010
+	'Espadaea_amoena'                         10100000011003010
+	'Exodeconus_miersii'                      00011000011004010
+	'Fabiana_imbricata'                       10100000011001010
+	'Goetzea_elegans'                         11101000011003010
+	'Grammosolen_dixonii'                     10100000011001010
+	'Hawkesiophyton_panamense'                10100000001100010
+	'Heteranthia_decipiens'                   10101000011001010
+	'Hunzikeria_texana'                       10001000011111010
+	'Hyoscyamus_niger'                        01201000011115010
+	'Iochroma_cyaneum'                        00001000011000010
+	'Jaborosa_laciniata'                      00011000011100010
+	'Jaltomata_bicolor'                       00011000011000010
+	'Jaltomata_grandiflora'                   00011000011000010
+	'Juanulloa_mexicana'                      10001000111000010
+	'Latua_pubiflora'                         10000000011000010
+	'Leptoglossis_darcyana'                   10100000001001010
+	'Leucophysalis_grandiflora'               00200000011110010
+	'Lycianthes_rantonnetii'                  01201000020000011
+	'Lycianthes_acapulcensis'                 10201000020000011
+	'Lycium_americanum'                       00011000011000010
+	'Mandragora_officinarum'                  01210000001100010
+	'Markea_coccinea'                         10101000011100010
+	'Melananthus_guatemalensis'               10100000011001010
+	'Mellissia_begoniifolia'                  00?10000001000010
+	'Merinthopodium_neuranthum'               10101000011000010
+	'Metternichia_princeps'                   11100000001111010
+	'Nectouxia_formosa'                       00210000011000010
+	'Nicandra_physalodes'                     00200001111100110
+	'Nicotiana_wigandioides'                  10111000011001010
+	'Nierembergia_linariifolia'               11100000011111010
+	'Nolana_divaricata'                       10001000000002010
+	'Nothocestrum_latifolium'                 00200000011100010
+	'Oryctes_nevadensis'                      00210100011104010
+	'Pantacantha_ameghinoi'                   10011000011001010
+	'Petunia_interior'                        11100000011101010
+	'Physaliastrum_heterophyllum'             00001000011100010
+	'Physalis_peruviana'                      00001001111110110
+	'Physalis_angulata'                       00201001111110110
+	'Physochlaina_orientalis'                 01211000011115110
+	'Plowmania_nyctaginoides'                 10100000011111010
+	'Protoschwenkia_mandonii'                 10001000011001010
+	'Przewalskia_tangutica'                   01011000011115110
+	'Quincula_lobata'                         00210001111100110
+	'Reyesia_chilensis'                       10210000011111010
+	'Salpichroa_tristis'                      00211000011000010
+	'Salpiglossis_sinuata'                    10201000001111010
+	'Saracha_quitensis'                       00010000011000010
+	'Schizanthus_grahamii'                    10011000011101010
+	'Schraderanthus_viscosus'                 00000000011100110
+	'Schultesianthus_leucanthus'              10011000010000010
+	'Schwenckia_americana'                    10100000011101010
+	'Sclerophylax_spinescens'                 10111000011002010
+	'Scopolia_carniolica'                     01001000001115010
+	'Sessea_stipulata'                        00100100011001010
+	'Solandra_grandiflora'                    00010000011000010
+	'Solanum_annuum'                          01211000011000110
+	'Solanum_barbisetum'                      00211000010000010
+	'Solanum_caripense'                       01210000011000010
+	'Solanum_corymbosum'                      00211000010000010
+	'Solanum_crinitum'                        00211000011000010
+	'Solanum_crispum'                         002??000010000010
+	'Solanum_evolvulifolium'                  01211000010000010
+	'Solanum_evolvuloides'                    0021?100010000010
+	'Solanum_herculeum'                       00210000011000010
+	'Solanum_hieronymi'                       00200001001000010
+	'Solanum_jamaicense'                      00211000010000010
+	'Solanum_laciniatum'                      00211000010000010
+	'Solanum_mahoriense'                      0021?001010100110
+	'Solanum_microdontum'                     01210000010000010
+	'Solanum_montanum'                        00210000010000010
+	'Solanum_oedipus'                         00211000010000010
+	'Solanum_palustre'                        01210000010000010
+	'Solanum_peruvianum'                      01211000010000010
+	'Solanum_polygamum'                       00211000001000010
+	'Solanum_salamancae'                      01211001111100110
+	'Solanum_sejunctum'                       00210000010000010
+	'Solanum_sinuatirecurvum'                 01211000011000010
+	'Solanum_sisymbriifolium'                 00211000111000010
+	'Solanum_terminale'                       00210000010000010
+	'Solanum_thelopodium'                     00211000010000010
+	'Solanum_torvum'                          00211000011000010
+	'Solanum_trizygum'                        00211000011000010
+	'Solanum_uncinellum'                      00211000011000010
+	'Solanum_valdiviense'                     00211000011100010
+	'Solanum_weddellii'                       00210001001100110
+	'Solanum_pimpinellifolium'                01201000011000010
+	'Solanum_pinnatum'                        00200000011000010
+	'Streptosolen_jamesonii'                  10100000011111010
+	'Symonanthus_aromaticus'                  10100000011001010
+	'Trompettia_cardenasiana'                 10001000011000000
+	'Trozelia_umbellata'                      00010000011110010
+	'Tsoala_tubiflora'                        10?01000011001010
+	'Tubocapsicum_anomalum'                   00010000020000010
+	'Tzeltalia_amphitricha'                   00011000111110110
+	'Vassobia_breviflora'                     00001000011000010
+	'Vestia_foetida'                          10100000011001010
+	'Withania_somnifera'                      00011001111110110
+	'Witheringia_solanacea'                   00000000020000010
+
+;
+
+END;
+BEGIN CHARACTERS;
+	TITLE  Continuous;
+	DIMENSIONS  NCHAR=8;
+	FORMAT DATATYPE = CONTINUOUS GAP = - MISSING = ?;
+CHARSTATELABELS 
+		1 'seed_length',
+		2 'seed_ratio',
+		3 'fruiting_calyx_LT',
+		4 'fruiting_calyx_ratio',
+		5 'calyx_lobe_LT',
+		6 'calyx_LT_lobe_ratio',
+		7 fruiting_pedicel,
+		8 'fruit_ratio' ; 
+	MATRIX
+	'f_Eophysaloides_inflata'                  ? ? 10.8 1.27 2.0 5.4 5.22 1.94
+	'f_Lycianthoides_calycina'                 ? ? 2.73 0.93 0.0 ? ? ?
+	'f_Physalis_hunickenii'                    ? ? 29.2 1.61 8.5 3.44 18.5 ?
+	'f_Physalis_infinemundi'                   ? ? 25.2 1.91 7.9 3.19 18.8 1.0
+	'UF6500_Nephrosemen_reticulatus'           3.268 1.218039508 ? ? ? ? ? ?
+	'V_40891_Solanispermum_reniforme'          3.653 1.202831742 ? ? ? ? ? ?
+	'V_40898_Solanum_arnense'                  2.659 1.133418585 ? ? ? ? ? ?
+	'CCN6065_second_seed_Capsicum_pliocenicum' 1.529 1.058864266 ? ? ? ? ? ?
+	'H4895_Hyoscyamus_undulatus'               1.13 1.086538462 ? ? ? ? ? ?
+	'K453A_Hyoscyamus_datureoides'             1.71 1.11038961 ? ? ? ? ? ?
+	'K528_Solanum_miocenicus'                  1.31 1.408602151 ? ? ? ? ? ?
+	'K530_Solanoides_dorofeevii'               1.63 1.325203252 ? ? ? ? ? ?
+	'K587B_Solanum_foveolatum'                 1.98 1.137931034 ? ? ? ? ? ?
+	'2003_0073_Nicotianosemen_minuta'          2.194 1.42560104 ? ? ? ? ? ?
+	'Alkekengi_officinarum'                    1.95 1.15 50.75 1.99 6.48 7.83 33.0 1.0
+	'Anisodus_tanguticus'                      2.65 1.33 67.5 2.25 16.0 4.22 75.0 1.26
+	'Anthocercis_intricata'                    1.7 2.13 2.2 0.92 1.9 1.16 6.5 3.37
+	'Anthotroche_pannosa'                      2.4 2.18 5.5 0.61 3.0 1.83 1.0 2.0
+	'Archiphysalis_chamaesarachoides'          1.55 1.28 16.0 1.33 1.5 10.67 18.5 1.11
+	'Athenaea_brasiliana'                      3.2 1.21 2.2 0.46 1.7 1.13 18.0 0.99
+	'Athenaea_cuspidata'                       2.9 1.16 20.5 0.98 19.5 1.05 29.5 1.17
+	'Atropa_belladonna'                        1.8 1.64 24.0 0.83 15.0 1.6 23.0 0.97
+	'Atropanthe_sinensis'                      2.7 1.08 33.5 1.2 10.0 3.35 23.0 1.0
+	'Benthamiella_patagonica'                  1.6 1.33 4.25 1.85 1.25 3.4 1.5 1.2
+	'Bouchetia_anomala'                        0.8 1.14 9.5 1.73 4.25 2.24 17.0 1.89
+	'Brachistus_nelsonii'                      1.2 1.09 11.0 0.92 6.0 1.83 32.5 1.0
+	'Browallia_americana'                      0.9 1.13 9.0 2.0 3.25 2.77 4.0 1.57
+	'Brugmansia_suaveolens'                    8.5 1.55 87.5 3.98 29.5 2.97 31.0 2.92
+	'Brunfelsia_australis'                     9.0 1.5 12.5 1.04 9.0 1.39 6.5 1.25
+	'Calibrachoa_humilis'                      1.35 1.35 11.5 1.64 6.5 1.77 13.0 1.47
+	'Calliphysalis_carpenteri'                 1.35 1.23 15.5 1.15 3.6 4.31 7.0 0.84
+	'Capsicophysalis_potosina'                 1.3 0.96 10.0 1.0 4.5 2.22 27.5 1.0
+	'Capsicum_chacoense'                       3.7 1.28 1.3 0.3 0.7 0.8 13.4 1.4
+	'Cestrum_bracteatum'                       3.5 1.4 3.0 0.67 1.25 2.4 0.0 1.0
+	'Chamaesaracha_arida'                      2.1 1.11 6.0 0.87 1.8 3.33 14.5 1.13
+	'Coeloneurum_ferrugineum'                  7.0 1.0 2.0 0.57 2.0 1.0 3.5 1.0
+	'Combera_paradoxa'                         1.4 1.47 7.0 0.51 5.5 1.27 1.5 1.21
+	'Crenidium_spinescens'                     3.4 3.09 1.75 0.78 0.5 3.5 4.5 1.89
+	'Cuatresia_harlingiana'                    3.0 1.5 11.0 3.14 3.25 3.38 3.5 3.33
+	'Cyphanthera_anthocercidea'                2.8 2.8 4.25 0.94 3.3 1.29 4.5 0.94
+	'Darcyanthus_spruceanus'                   0.63 1.0 5.5 1.0 0.6 9.17 7.0 1.0
+	'Datura_ferox'                             3.27 1.13 4.25 0.27 4.75 0.89 16.0 1.0
+	'Deprea_pauciflora'                        2.3 1.1 18.1 1.39 2.15 8.42 9.25 1.21
+	'Deprea_abra_patriciae'                    2.2 1.02 10.5 0.68 2.5 4.2 8.5 1.24
+	'Discopodium_penninervium'                 2.6 1.18 3.5 0.72 0.2 17.5 12.5 1.0
+	'Duboisia_myoporoides'                     2.7 2.0 2.5 0.59 1.1 2.27 10.0 1.0
+	'Duckeodendron_cestroides'                 27.5 1.53 2.5 0.45 0.25 10.0 5.5 2.09
+	'Dunalia_brachyacantha'                    2.0 1.33 3.25 0.54 1.75 1.86 13.5 1.0
+	'Dyssochroma_viridiflorum'                 4.2 3.82 37.5 0.63 28.0 1.34 27.5 2.06
+	'Eriolarynx_australis'                     1.6 1.14 6.5 0.41 1.2 5.42 35.0 1.0
+	'Espadaea_amoena'                          4.94 1.27 3.25 0.59 2.15 1.51 4.5 1.19
+	'Exodeconus_miersii'                       1.85 1.21 9.0 1.2 5.6 1.61 11.0 1.0
+	'Fabiana_imbricata'                        1.3 2.6 2.5 0.89 0.6 4.17 0.4 2.0
+	'Goetzea_elegans'                          3.14 3.05 0.3 0.48 0.2 1.18 1.24 1.38
+	'Grammosolen_dixonii'                      2.5 2.08 3.0 0.69 2.0 1.5 0.4 0.94
+	'Hawkesiophyton_panamense'                 3.55 2.84 7.0 0.74 6.0 1.17 11.0 2.86
+	'Heteranthia_decipiens'                    0.66 1.35 3.5 0.78 2.0 1.75 2.5 1.16
+	'Hunzikeria_texana'                        1.15 1.77 11.0 1.38 1.75 6.29 9.5 1.29
+	'Hyoscyamus_niger'                         1.15 1.1 22.0 2.2 4.25 5.18 1.5 1.0
+	'Iochroma_cyaneum'                         1.2 1.33 9.0 0.82 2.0 4.5 18.0 1.21
+	'Jaborosa_laciniata'                       3.4 1.42 5.7 0.66 5.0 1.2 20.0 0.72
+	'Jaltomata_bicolor'                        1.67 1.0 11.0 0.35 8.8 1.25 23.0 0.6
+	'Jaltomata_grandiflora'                    1.73 1.18 12.65 0.51 6.8 1.86 13.0 0.65
+	'Juanulloa_mexicana'                       4.65 2.0 25.3 1.43 23.3 3.1 16.3 1.25
+	'Latua_pubiflora'                          1.85 1.06 13.5 1.29 5.0 2.7 12.5 1.0
+	'Leptoglossis_darcyana'                    0.4 1.33 7.0 3.11 4.75 1.47 7.5 2.33
+	'Leucophysalis_grandiflora'                1.65 1.14 20.0 1.25 5.5 3.64 14.0 0.88
+	'Lycianthes_rantonnetii'                   2.63 1.1 4.0 0.4 0.0 ? 15.0 1.05
+	'Lycianthes_acapulcensis'                  3.6 1.2 3.75 0.39 0.0 ? 55.0 2.24
+	'Lycium_americanum'                        1.65 1.32 4.5 0.95 1.25 3.6 6.5 1.29
+	'Mandragora_officinarum'                   5.0 1.11 14.0 1.0 9.0 1.56 30.0 0.92
+	'Markea_coccinea'                          3.0 2.73 36.0 0.65 30.0 1.2 21.0 1.91
+	'Melananthus_guatemalensis'                1.25 1.39 1.25 0.96 0.7 1.79 1.0 2.5
+	'Mellissia_begoniifolia'                   1.0 2.0 1.6 0.64 0.69 0.77 1.0 0.67
+	'Merinthopodium_neuranthum'                2.4 1.85 1.8 0.33 2.38 2.6 5.0 1.2
+	'Metternichia_princeps'                    34.5 12.55 15.0 2.14 8.0 1.88 6.0 5.33
+	'Nectouxia_formosa'                        2.15 1.26 28.5 2.19 28.0 1.02 25.0 3.33
+	'Nicandra_physalodes'                      1.75 1.35 28.0 1.04 2.3 12.17 25.0 1.0
+	'Nicotiana_wigandioides'                   0.48 1.5 8.81 1.4 2.1 4.2 6.65 1.07
+	'Nierembergia_linariifolia'                0.75 1.36 9.0 2.4 3.75 2.4 8.0 1.13
+	'Nolana_divaricata'                        1.6 1.52 3.0 0.5 1.25 2.4 11.0 0.5
+	'Nothocestrum_latifolium'                  2.15 1.08 5.0 0.91 2.8 1.79 11.0 1.0
+	'Oryctes_nevadensis'                       3.15 1.05 7.0 0.88 5.8 1.21 5.7 1.0
+	'Pantacantha_ameghinoi'                    2.0 1.82 13.5 2.45 9.0 1.5 1.5 1.36
+	'Petunia_interior'                         0.45 1.29 20.5 1.46 9.5 2.16 19.0 1.93
+	'Physaliastrum_heterophyllum'              2.4 1.2 22.5 1.18 8.0 2.81 30.75 0.86
+	'Physalis_peruviana'                       1.3 1.44 42.0 1.91 14.0 3.0 10.0 1.27
+	'Physalis_angulata'                        1.9 1.73 27.5 1.25 7.0 3.93 14.5 1.0
+	'Physochlaina_orientalis'                  3.05 1.3 17.5 1.67 3.0 5.83 10.5 1.16
+	'Plowmania_nyctaginoides'                  1.4 1.56 8.0 1.33 4.0 2.0 14.5 0.85
+	'Protoschwenkia_mandonii'                  0.95 1.06 4.5 1.06 2.1 2.14 6.5 0.94
+	'Przewalskia_tangutica'                    3.72 1.22 57.5 1.55 3.0 19.17 6.0 1.0
+	'Quincula_lobata'                          2.9 1.75 13.0 0.93 0.6 21.67 36.5 0.92
+	'Reyesia_chilensis'                        1.0 0.91 2.75 1.31 1.1 2.5 25.0 1.31
+	'Salpichroa_tristis'                       2.0 1.14 8.5 0.85 6.5 1.31 7.5 1.9
+	'Salpiglossis_sinuata'                     1.0 1.33 13.0 1.53 5.0 2.6 16.0 1.65
+	'Saracha_quitensis'                        3.65 1.4 4.25 0.4 2.4 1.77 14.0 1.0
+	'Schizanthus_grahamii'                     1.9 1.19 10.5 1.24 9.0 1.17 19.5 1.64
+	'Schraderanthus_viscosus'                  1.6 1.19 23.0 1.15 14.5 1.59 41.5 0.86
+	'Schultesianthus_leucanthus'               5.25 1.24 9.0 0.6 5.0 1.8 13.5 1.03
+	'Schwenckia_americana'                     0.7 1.17 2.25 0.5 2.1 1.07 4.5 1.0
+	'Sclerophylax_spinescens'                  3.0 3.0 6.6 1.74 4.0 1.65 0.0 0.75
+	'Scopolia_carniolica'                      2.8 1.56 14.0 1.4 6.7 2.09 27.5 1.0
+	'Sessea_stipulata'                         8.3 9.22 6.65 1.8 0.9 7.39 0.0 2.15
+	'Solandra_grandiflora'                     5.25 1.62 85.0 2.43 40.0 2.13 15.0 1.2
+	'Solanum_annuum'                           2.55 1.11 8.0 0.89 1.0 8.0 6.0 1.0
+	'Solanum_barbisetum'                       4.0 1.6 20.0 1.43 10.0 2.0 8.0 1.0
+	'Solanum_caripense'                        1.85 1.42 5.0 0.56 3.0 1.67 11.0 1.13
+	'Solanum_corymbosum'                       1.65 1.27 2.5 0.5 1.3 1.92 2.5 1.0
+	'Solanum_crinitum'                         2.65 1.33 21.0 0.5 22.0 0.95 11.0 1.0
+	'Solanum_crispum'                          2.5 1.43 1.1 0.29 0.4 0.27 13.0 1.0
+	'Solanum_evolvulifolium'                   1.75 1.0 2.25 0.5 1.5 1.5 12.5 1.31
+	'Solanum_evolvuloides'                     2.9 1.260869565 8.9 1.3 7.7 4.4 10.5 1.0
+	'Solanum_herculeum'                        7.0 1.0 12.0 1.0 12.0 1.0 17.5 1.0
+	'Solanum_hieronymi'                        1.9 0.9 11.0 0.73 12.0 0.92 16.93 1.23
+	'Solanum_jamaicense'                       1.25 1.67 6.5 0.81 9.0 0.72 9.0 1.0
+	'Solanum_laciniatum'                       2.5 1.0 3.5 0.5 2.5 1.4 25.0 1.29
+	'Solanum_mahoriense'                       4.0 1.14 52.5 1.27 5.5 9.55 12.5 1.0
+	'Solanum_microdontum'                      2.0 1.33 6.5 0.52 8.0 0.81 12.5 0.88
+	'Solanum_montanum'                         1.3 1.44 5.5 0.5 5.0 1.1 10.5 1.0
+	'Solanum_oedipus'                          4.25 1.0 2.25 1.13 2.5 0.9 20.0 1.0
+	'Solanum_palustre'                         2.0 1.33 2.65 0.48 5.5 0.48 13.5 1.0
+	'Solanum_peruvianum'                       2.4 2.0 12.0 0.86 14.0 0.86 17.5 1.0
+	'Solanum_polygamum'                        5.0 1.67 25.0 0.5 15.0 1.67 7.5 1.0
+	'Solanum_salamancae'                       2.25 1.29 12.0 1.2 5.0 2.4 14.5 1.08
+	'Solanum_sejunctum'                        2.5 1.0 28.0 1.17 10.0 2.8 7.0 1.0
+	'Solanum_sinuatirecurvum'                  3.25 1.3 8.0 0.55 4.5 1.78 20.5 1.0
+	'Solanum_sisymbriifolium'                  2.75 1.22 16.5 0.66 15.0 1.1 11.0 1.0
+	'Solanum_terminale'                        2.0 1.33 2.5 0.5 2.5 1.0 10.0 1.42
+	'Solanum_thelopodium'                      3.5 1.0 1.75 0.44 2.0 0.88 11.5 1.0
+	'Solanum_torvum'                           2.75 1.22 6.0 0.52 7.0 0.86 13.5 1.0
+	'Solanum_trizygum'                         3.0 1.33 2.0 0.5 1.0 2.0 17.5 1.68
+	'Solanum_uncinellum'                       5.0 1.43 1.25 0.5 1.5 0.83 15.0 1.0
+	'Solanum_valdiviense'                      3.0 1.5 2.25 0.5 1.5 1.5 17.5 1.0
+	'Solanum_weddellii'                        2.5 1.67 10.0 0.8 7.5 1.33 8.5 1.0
+	'Solanum_pimpinellifolium'                 2.5 2.17 11.0 0.51 12.0 0.92 17.5 1.0
+	'Solanum_pinnatum'                         1.45 0.85 4.0 0.5 3.0 1.33 10.5 1.0
+	'Streptosolen_jamesonii'                   1.21 1.53 12.5 2.38 3.5 3.57 18.5 0.95
+	'Symonanthus_aromaticus'                   1.9 1.73 2.8 0.75 1.5 1.87 2.5 1.0
+	'Trompettia_cardenasiana'                  3.65 1.13 7.2 0.96 4.0 1.8 5.5 1.0
+	'Trozelia_umbellata'                       1.7 1.01 7.0 0.58 4.0 1.75 31.0 1.57
+	'Tsoala_tubiflora'                         11.3 1.9 11.0 5.5 3.0 3.67 5.5 2.2
+	'Tubocapsicum_anomalum'                    2.0 1.11 2.5 0.83 0.0 ? 20.0 1.0
+	'Tzeltalia_amphitricha'                    1.75 1.0 55.0 1.57 4.4 12.5 24.0 1.0
+	'Vassobia_breviflora'                      1.95 1.15 2.0 0.5 1.0 2.0 25.5 1.0
+	'Vestia_foetida'                           2.9 1.45 10.0 0.59 3.3 3.03 12.0 1.92
+	'Withania_somnifera'                       2.15 1.05 13.5 1.13 3.5 3.86 3.0 1.0
+	'Witheringia_solanacea'                    2.33 1.2 2.45 0.38 0.0 ? 16.0 1.0
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED  (CHARACTERS = Discrete)  =  unord:  1- 17;
+TYPESET * UNTITLED  (CHARACTERS = Continuous)  =  Squared:  1- 8;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED  (CHARACTERS = Discrete)  =  'Mk1 (est.)':  1- 17;
+ProbModelSet * UNTITLED  (CHARACTERS = Continuous)  =  Brownian_default:  1- 8;
+END;
+
+BEGIN TREES;
+	Title 'edited_discrete';
+	ID 0190f558e66a26;
+	LINK Taxa = Taxa;
+	TRANSLATE
+[0] 		1 'f_Eophysaloides_inflata',
+[1] 		2 'f_Lycianthoides_calycina',
+[2] 		3 'f_Physalis_hunickenii',
+[3] 		4 'f_Physalis_infinemundi',
+[4] 		5 'UF6500_Nephrosemen_reticulatus',
+[5] 		6 'V_40891_Solanispermum_reniforme',
+[6] 		7 'V_40898_Solanum_arnense',
+[7] 		8 'CCN6065_second_seed_Capsicum_pliocenicum',
+[8] 		9 'H4895_Hyoscyamus_undulatus',
+[9] 		10 'K453A_Hyoscyamus_datureoides',
+[10] 		11 'K528_Solanum_miocenicus',
+[11] 		12 'K530_Solanoides_dorofeevii',
+[12] 		13 'K587B_Solanum_foveolatum',
+[13] 		14 '2003_0073_Nicotianosemen_minuta',
+[14] 		15 'Alkekengi_officinarum',
+[15] 		16 'Anisodus_tanguticus',
+[16] 		17 'Anthocercis_intricata',
+[17] 		18 'Anthotroche_pannosa',
+[18] 		19 'Archiphysalis_chamaesarachoides',
+[19] 		20 'Athenaea_brasiliana',
+[20] 		21 'Athenaea_cuspidata',
+[21] 		22 'Atropa_belladonna',
+[22] 		23 'Atropanthe_sinensis',
+[23] 		24 'Benthamiella_patagonica',
+[24] 		25 'Bouchetia_anomala',
+[25] 		26 'Brachistus_nelsonii',
+[26] 		27 'Browallia_americana',
+[27] 		28 'Brugmansia_suaveolens',
+[28] 		29 'Brunfelsia_australis',
+[29] 		30 'Calibrachoa_humilis',
+[30] 		31 'Calliphysalis_carpenteri',
+[31] 		32 'Capsicophysalis_potosina',
+[32] 		33 'Capsicum_chacoense',
+[33] 		34 'Cestrum_bracteatum',
+[34] 		35 'Chamaesaracha_arida',
+[35] 		36 'Coeloneurum_ferrugineum',
+[36] 		37 'Combera_paradoxa',
+[37] 		38 'Crenidium_spinescens',
+[38] 		39 'Cuatresia_harlingiana',
+[39] 		40 'Cyphanthera_anthocercidea',
+[40] 		41 'Darcyanthus_spruceanus',
+[41] 		42 'Datura_ferox',
+[42] 		43 'Deprea_pauciflora',
+[43] 		44 'Deprea_abra_patriciae',
+[44] 		45 'Discopodium_penninervium',
+[45] 		46 'Duboisia_myoporoides',
+[46] 		47 'Duckeodendron_cestroides',
+[47] 		48 'Dunalia_brachyacantha',
+[48] 		49 'Dyssochroma_viridiflorum',
+[49] 		50 'Eriolarynx_australis',
+[50] 		51 'Espadaea_amoena',
+[51] 		52 'Exodeconus_miersii',
+[52] 		53 'Fabiana_imbricata',
+[53] 		54 'Goetzea_elegans',
+[54] 		55 'Grammosolen_dixonii',
+[55] 		56 'Hawkesiophyton_panamense',
+[56] 		57 'Heteranthia_decipiens',
+[57] 		58 'Hunzikeria_texana',
+[58] 		59 'Hyoscyamus_niger',
+[59] 		60 'Iochroma_cyaneum',
+[60] 		61 'Jaborosa_laciniata',
+[61] 		62 'Jaltomata_bicolor',
+[62] 		63 'Jaltomata_grandiflora',
+[63] 		64 'Juanulloa_mexicana',
+[64] 		65 'Latua_pubiflora',
+[65] 		66 'Leptoglossis_darcyana',
+[66] 		67 'Leucophysalis_grandiflora',
+[67] 		68 'Lycianthes_rantonnetii',
+[68] 		69 'Lycianthes_acapulcensis',
+[69] 		70 'Lycium_americanum',
+[70] 		71 'Mandragora_officinarum',
+[71] 		72 'Markea_coccinea',
+[72] 		73 'Melananthus_guatemalensis',
+[73] 		74 'Mellissia_begoniifolia',
+[74] 		75 'Merinthopodium_neuranthum',
+[75] 		76 'Metternichia_princeps',
+[76] 		77 'Nectouxia_formosa',
+[77] 		78 'Nicandra_physalodes',
+[78] 		79 'Nicotiana_wigandioides',
+[79] 		80 'Nierembergia_linariifolia',
+[80] 		81 'Nolana_divaricata',
+[81] 		82 'Nothocestrum_latifolium',
+[82] 		83 'Oryctes_nevadensis',
+[83] 		84 'Pantacantha_ameghinoi',
+[84] 		85 'Petunia_interior',
+[85] 		86 'Physaliastrum_heterophyllum',
+[86] 		87 'Physalis_peruviana',
+[87] 		88 'Physalis_angulata',
+[88] 		89 'Physochlaina_orientalis',
+[89] 		90 'Plowmania_nyctaginoides',
+[90] 		91 'Protoschwenkia_mandonii',
+[91] 		92 'Przewalskia_tangutica',
+[92] 		93 'Quincula_lobata',
+[93] 		94 'Reyesia_chilensis',
+[94] 		95 'Salpichroa_tristis',
+[95] 		96 'Salpiglossis_sinuata',
+[96] 		97 'Saracha_quitensis',
+[97] 		98 'Schizanthus_grahamii',
+[98] 		99 'Schraderanthus_viscosus',
+[99] 		100 'Schultesianthus_leucanthus',
+[100] 		101 'Schwenckia_americana',
+[101] 		102 'Sclerophylax_spinescens',
+[102] 		103 'Scopolia_carniolica',
+[103] 		104 'Sessea_stipulata',
+[104] 		105 'Solandra_grandiflora',
+[105] 		106 'Solanum_annuum',
+[106] 		107 'Solanum_barbisetum',
+[107] 		108 'Solanum_caripense',
+[108] 		109 'Solanum_corymbosum',
+[109] 		110 'Solanum_crinitum',
+[110] 		111 'Solanum_crispum',
+[111] 		112 'Solanum_evolvulifolium',
+[112] 		113 'Solanum_evolvuloides',
+[113] 		114 'Solanum_herculeum',
+[114] 		115 'Solanum_hieronymi',
+[115] 		116 'Solanum_jamaicense',
+[116] 		117 'Solanum_laciniatum',
+[117] 		118 'Solanum_mahoriense',
+[118] 		119 'Solanum_microdontum',
+[119] 		120 'Solanum_montanum',
+[120] 		121 'Solanum_oedipus',
+[121] 		122 'Solanum_palustre',
+[122] 		123 'Solanum_peruvianum',
+[123] 		124 'Solanum_polygamum',
+[124] 		125 'Solanum_salamancae',
+[125] 		126 'Solanum_sejunctum',
+[126] 		127 'Solanum_sinuatirecurvum',
+[127] 		128 'Solanum_sisymbriifolium',
+[128] 		129 'Solanum_terminale',
+[129] 		130 'Solanum_thelopodium',
+[130] 		131 'Solanum_torvum',
+[131] 		132 'Solanum_trizygum',
+[132] 		133 'Solanum_uncinellum',
+[133] 		134 'Solanum_valdiviense',
+[134] 		135 'Solanum_weddellii',
+[135] 		136 'Solanum_pimpinellifolium',
+[136] 		137 'Solanum_pinnatum',
+[137] 		138 'Streptosolen_jamesonii',
+[138] 		139 'Symonanthus_aromaticus',
+[139] 		140 'Trompettia_cardenasiana',
+[140] 		141 'Trozelia_umbellata',
+[141] 		142 'Tsoala_tubiflora',
+[142] 		143 'Tubocapsicum_anomalum',
+[143] 		144 'Tzeltalia_amphitricha',
+[144] 		145 'Vassobia_breviflora',
+[145] 		146 'Vestia_foetida',
+[146] 		147 'Withania_somnifera',
+[147] 		148 'Witheringia_solanacea';
+	TREE edited = ((((96,(((146,34,104),(27,138)),((54,142,36,76,51,94,47),((29,25,30,53,58,66,80,85,90),((24,84,37),((73,101,57,91),(17,40,18,55,79,38,46,139),((((22,23,16,9,59),(92,103,89,70,81,102)),(65,61)),(78,(((64,49,56,72,75,105,100),52),(71,((10,28,42,140),((((8,(2,(33,(68,69)))),(1,(74,82,39,86,143,(43,44),45,(20,21),147),(48,50,60,97,141,145,(148,19,26,31,32,35,41,67,83,93,99,144,15,(3,4,87,88))))),(77,95)),((62,63),(6,7,11,12,13,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,128,129,130,131,132,133,134,135,136,137,106,127)))))))))))))),14),5),98);
+
+END;
+
+
+BEGIN TREES;
+	Title 'edited_cont';
+	ID 0190f55a593e28;
+	LINK Taxa = Taxa;
+	TRANSLATE
+[0] 		1 'f_Eophysaloides_inflata',
+[1] 		2 'f_Lycianthoides_calycina',
+[2] 		3 'f_Physalis_hunickenii',
+[3] 		4 'f_Physalis_infinemundi',
+[4] 		5 'UF6500_Nephrosemen_reticulatus',
+[5] 		6 'V_40891_Solanispermum_reniforme',
+[6] 		7 'V_40898_Solanum_arnense',
+[7] 		8 'CCN6065_second_seed_Capsicum_pliocenicum',
+[8] 		9 'H4895_Hyoscyamus_undulatus',
+[9] 		10 'K453A_Hyoscyamus_datureoides',
+[10] 		11 'K528_Solanum_miocenicus',
+[11] 		12 'K530_Solanoides_dorofeevii',
+[12] 		13 'K587B_Solanum_foveolatum',
+[13] 		14 '2003_0073_Nicotianosemen_minuta',
+[14] 		15 'Alkekengi_officinarum',
+[15] 		16 'Anisodus_tanguticus',
+[16] 		17 'Anthocercis_intricata',
+[17] 		18 'Anthotroche_pannosa',
+[18] 		19 'Archiphysalis_chamaesarachoides',
+[19] 		20 'Athenaea_brasiliana',
+[20] 		21 'Athenaea_cuspidata',
+[21] 		22 'Atropa_belladonna',
+[22] 		23 'Atropanthe_sinensis',
+[23] 		24 'Benthamiella_patagonica',
+[24] 		25 'Bouchetia_anomala',
+[25] 		26 'Brachistus_nelsonii',
+[26] 		27 'Browallia_americana',
+[27] 		28 'Brugmansia_suaveolens',
+[28] 		29 'Brunfelsia_australis',
+[29] 		30 'Calibrachoa_humilis',
+[30] 		31 'Calliphysalis_carpenteri',
+[31] 		32 'Capsicophysalis_potosina',
+[32] 		33 'Capsicum_chacoense',
+[33] 		34 'Cestrum_bracteatum',
+[34] 		35 'Chamaesaracha_arida',
+[35] 		36 'Coeloneurum_ferrugineum',
+[36] 		37 'Combera_paradoxa',
+[37] 		38 'Crenidium_spinescens',
+[38] 		39 'Cuatresia_harlingiana',
+[39] 		40 'Cyphanthera_anthocercidea',
+[40] 		41 'Darcyanthus_spruceanus',
+[41] 		42 'Datura_ferox',
+[42] 		43 'Deprea_pauciflora',
+[43] 		44 'Deprea_abra_patriciae',
+[44] 		45 'Discopodium_penninervium',
+[45] 		46 'Duboisia_myoporoides',
+[46] 		47 'Duckeodendron_cestroides',
+[47] 		48 'Dunalia_brachyacantha',
+[48] 		49 'Dyssochroma_viridiflorum',
+[49] 		50 'Eriolarynx_australis',
+[50] 		51 'Espadaea_amoena',
+[51] 		52 'Exodeconus_miersii',
+[52] 		53 'Fabiana_imbricata',
+[53] 		54 'Goetzea_elegans',
+[54] 		55 'Grammosolen_dixonii',
+[55] 		56 'Hawkesiophyton_panamense',
+[56] 		57 'Heteranthia_decipiens',
+[57] 		58 'Hunzikeria_texana',
+[58] 		59 'Hyoscyamus_niger',
+[59] 		60 'Iochroma_cyaneum',
+[60] 		61 'Jaborosa_laciniata',
+[61] 		62 'Jaltomata_bicolor',
+[62] 		63 'Jaltomata_grandiflora',
+[63] 		64 'Juanulloa_mexicana',
+[64] 		65 'Latua_pubiflora',
+[65] 		66 'Leptoglossis_darcyana',
+[66] 		67 'Leucophysalis_grandiflora',
+[67] 		68 'Lycianthes_rantonnetii',
+[68] 		69 'Lycianthes_acapulcensis',
+[69] 		70 'Lycium_americanum',
+[70] 		71 'Mandragora_officinarum',
+[71] 		72 'Markea_coccinea',
+[72] 		73 'Melananthus_guatemalensis',
+[73] 		74 'Mellissia_begoniifolia',
+[74] 		75 'Merinthopodium_neuranthum',
+[75] 		76 'Metternichia_princeps',
+[76] 		77 'Nectouxia_formosa',
+[77] 		78 'Nicandra_physalodes',
+[78] 		79 'Nicotiana_wigandioides',
+[79] 		80 'Nierembergia_linariifolia',
+[80] 		81 'Nolana_divaricata',
+[81] 		82 'Nothocestrum_latifolium',
+[82] 		83 'Oryctes_nevadensis',
+[83] 		84 'Pantacantha_ameghinoi',
+[84] 		85 'Petunia_interior',
+[85] 		86 'Physaliastrum_heterophyllum',
+[86] 		87 'Physalis_peruviana',
+[87] 		88 'Physalis_angulata',
+[88] 		89 'Physochlaina_orientalis',
+[89] 		90 'Plowmania_nyctaginoides',
+[90] 		91 'Protoschwenkia_mandonii',
+[91] 		92 'Przewalskia_tangutica',
+[92] 		93 'Quincula_lobata',
+[93] 		94 'Reyesia_chilensis',
+[94] 		95 'Salpichroa_tristis',
+[95] 		96 'Salpiglossis_sinuata',
+[96] 		97 'Saracha_quitensis',
+[97] 		98 'Schizanthus_grahamii',
+[98] 		99 'Schraderanthus_viscosus',
+[99] 		100 'Schultesianthus_leucanthus',
+[100] 		101 'Schwenckia_americana',
+[101] 		102 'Sclerophylax_spinescens',
+[102] 		103 'Scopolia_carniolica',
+[103] 		104 'Sessea_stipulata',
+[104] 		105 'Solandra_grandiflora',
+[105] 		106 'Solanum_annuum',
+[106] 		107 'Solanum_barbisetum',
+[107] 		108 'Solanum_caripense',
+[108] 		109 'Solanum_corymbosum',
+[109] 		110 'Solanum_crinitum',
+[110] 		111 'Solanum_crispum',
+[111] 		112 'Solanum_evolvulifolium',
+[112] 		113 'Solanum_evolvuloides',
+[113] 		114 'Solanum_herculeum',
+[114] 		115 'Solanum_hieronymi',
+[115] 		116 'Solanum_jamaicense',
+[116] 		117 'Solanum_laciniatum',
+[117] 		118 'Solanum_mahoriense',
+[118] 		119 'Solanum_microdontum',
+[119] 		120 'Solanum_montanum',
+[120] 		121 'Solanum_oedipus',
+[121] 		122 'Solanum_palustre',
+[122] 		123 'Solanum_peruvianum',
+[123] 		124 'Solanum_polygamum',
+[124] 		125 'Solanum_salamancae',
+[125] 		126 'Solanum_sejunctum',
+[126] 		127 'Solanum_sinuatirecurvum',
+[127] 		128 'Solanum_sisymbriifolium',
+[128] 		129 'Solanum_terminale',
+[129] 		130 'Solanum_thelopodium',
+[130] 		131 'Solanum_torvum',
+[131] 		132 'Solanum_trizygum',
+[132] 		133 'Solanum_uncinellum',
+[133] 		134 'Solanum_valdiviense',
+[134] 		135 'Solanum_weddellii',
+[135] 		136 'Solanum_pimpinellifolium',
+[136] 		137 'Solanum_pinnatum',
+[137] 		138 'Streptosolen_jamesonii',
+[138] 		139 'Symonanthus_aromaticus',
+[139] 		140 'Trompettia_cardenasiana',
+[140] 		141 'Trozelia_umbellata',
+[141] 		142 'Tsoala_tubiflora',
+[142] 		143 'Tubocapsicum_anomalum',
+[143] 		144 'Tzeltalia_amphitricha',
+[144] 		145 'Vassobia_breviflora',
+[145] 		146 'Vestia_foetida',
+[146] 		147 'Withania_somnifera',
+[147] 		148 'Witheringia_solanacea';
+	TREE edited = ((((96,(((146,34,104),(27,138)),((54,142,36,76,51,94,47),((29,25,30,53,58,66,80,85,90),((24,84,37),((73,101,57,91),(17,40,18,55,79,38,46,139),((((22,23,16,9,59),(92,103,89,70,81,102)),(65,61)),(78,(((64,49,56,72,75,105,100),52),(71,((10,28,42,140),((((8,(2,(33,(68,69)))),(1,(74,82,39,86,143,(43,44),45,(20,21),147),(48,50,60,97,141,145,(148,19,26,31,32,35,41,67,83,93,99,144,15,(3,4,87,88))))),(77,95)),((62,63),(6,7,11,12,13,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,128,129,130,131,132,133,134,135,136,137,106,127)))))))))))))),14),5),98);
+
+END;
+
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1722372139519;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 746008080270957385;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 2963454444014086272;
+			mqVersion 361;
+			checksumv 0 3 469156774 null  getNumChars 17 numChars 17 getNumTaxa 148 numTaxa 148   short true   bits 63   states 63   sumSquaresStatesOnly 12533.0 sumSquares 12533.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 2;
+			mqVersion;
+			setID 1 7869334369123821869;
+			mqVersion 361;
+			checksumv 1 3 2211469081 null  numChars 8   numItems 1   min 0.0   max 87.5   sumSquares 114993.26111868295   NumFiles 1 NumMatrices 2;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 163;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1524 1046;
+			setLocation 0 26;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.trees.BasicTreeWindowCoord.BasicTreeWindowCoord;
+		tell It;
+			makeTreeWindow #746008080270957385  #mesquite.trees.BasicTreeWindowMaker.BasicTreeWindowMaker;
+			tell It;
+				suppressEPCResponse;
+				setTreeSource  #mesquite.trees.StoredTrees.StoredTrees;
+				tell It;
+					setTreeBlock 1;
+					setTreeBlockID 0190f558e66a26;
+					toggleUseWeights off;
+				endTell;
+				setAssignedID 1312.1716394409371.2881573515496297540;
+				getTreeWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1361 974;
+					setLocation 0 26;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.trees.BasicTreeWindowMaker.BasicTreeWindow.collapse;
+					endTell;
+					getTreeDrawCoordinator #mesquite.trees.BasicTreeDrawCoordinator.BasicTreeDrawCoordinator;
+				tell It;
+					suppress;
+					setTreeDrawer  #mesquite.trees.SquareLineTree.SquareLineTree;
+					tell It;
+						setNodeLocs #mesquite.trees.NodeLocsStandard.NodeLocsStandard;
+						tell It;
+							branchLengthsToggle off;
+							toggleScale on;
+							toggleBroadScale off;
+							toggleCenter on;
+							toggleEven on;
+							setFixedTaxonDistance 0;
+						endTell;
+						setEdgeWidth 6;
+						showEdgeLines on;
+						orientRight;
+					endTell;
+					setBackground White;
+					setBranchColor Black;
+					showNodeNumbers off;
+					showBranchColors on;
+					labelBranchLengths off;
+					centerBrLenLabels on;
+					showBrLensUnspecified on;
+					showBrLenLabelsOnTerminals on;
+					setBrLenLabelColor 0 0 255;
+					setNumBrLenDecimals 6;
+					setSelectedTaxonHighlightMode 1;
+					desuppress;
+					getEmployee #mesquite.trees.BasicDrawTaxonNames.BasicDrawTaxonNames;
+					tell It;
+						setFontSize 12;
+						setColor Black;
+						setTaxonNameStyler  #mesquite.trees.ColorTaxonByAssigned.ColorTaxonByAssigned;
+						toggleShadePartition off;
+						toggleShowFootnotes on;
+						toggleNodeLabels on;
+						toggleCenterNodeNames off;
+						toggleShowNames on;
+						namesAngle ?;
+					endTell;
+				endTell;
+					setTreeNumber 1;
+					setDrawingSizeMode 0;
+					toggleLegendFloat on;
+					scale 0;
+					toggleTextOnTree off;
+					togglePrintName off;
+					showWindow;
+					newAssistant  #mesquite.ancstates.TraceCharacterHistory.TraceCharacterHistory;
+				tell It;
+					suspend ;
+					setDisplayMode  #mesquite.ancstates.ShadeStatesOnTree.ShadeStatesOnTree;
+					tell It;
+						toggleLabels off;
+						togglePredictions off;
+						toggleGray off;
+					endTell;
+					setHistorySource  #mesquite.ancstates.RecAncestralStates.RecAncestralStates;
+					tell It;
+						getCharacterSource  #mesquite.charMatrices.CharSrcCoordObed.CharSrcCoordObed;
+						tell It;
+							setCharacterSource #mesquite.charMatrices.StoredCharacters.StoredCharacters;
+							tell It;
+								setDataSet #2963454444014086272;
+							endTell;
+						endTell;
+						setMethod  #mesquite.parsimony.ParsAncestralStates.ParsAncestralStates;
+						tell It;
+							setModelSource  #mesquite.parsimony.CurrentParsModels.CurrentParsModels;
+							toggleMPRsMode off;
+						endTell;
+						toggleShowSelectedOnly off;
+					endTell;
+					setCharacter 14;
+					setMapping 1;
+					toggleShowLegend on;
+					setColorMode 0;
+					toggleWeights on;
+					setInitialOffsetX 20;
+					setInitialOffsetY 256;
+					setLegendWidth 142;
+					setLegendHeight 129;
+					resume ;
+				endTell;
+				endTell;
+				desuppressEPCResponse;
+				getEmployee #mesquite.trees.ColorBranches.ColorBranches;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.ornamental.BranchNotes.BranchNotes;
+				tell It;
+					setAlwaysOn off;
+				endTell;
+				getEmployee #mesquite.ornamental.ColorTreeByPartition.ColorTreeByPartition;
+				tell It;
+					colorByPartition off;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocDoubles.DrawTreeAssocDoubles;
+				tell It;
+					setOn on;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					setDigits 4;
+					setThreshold ?;
+					writeAsPercentage off;
+					toggleCentred off;
+					toggleHorizontal on;
+					toggleWhiteEdges on;
+					toggleShowOnTerminals on;
+					setFontSize 10;
+					setOffset 0  0;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocStrings.DrawTreeAssocStrings;
+				tell It;
+					setOn on;
+					toggleCentred on;
+					toggleHorizontal on;
+					setFontSize 10;
+					setOffset 0  0;
+					toggleShowOnTerminals on;
+				endTell;
+				getEmployee #mesquite.trees.TreeInfoValues.TreeInfoValues;
+				tell It;
+					panelOpen false;
+				endTell;
+			endTell;
+			makeTreeWindow #746008080270957385  #mesquite.trees.BasicTreeWindowMaker.BasicTreeWindowMaker;
+			tell It;
+				suppressEPCResponse;
+				setTreeSource  #mesquite.trees.StoredTrees.StoredTrees;
+				tell It;
+					setTreeBlock 1;
+					setTreeBlockID 0190f558e66a26;
+					toggleUseWeights off;
+				endTell;
+				setAssignedID 3327.1722103167460.2260201454913016803;
+				getTreeWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1361 974;
+					setLocation 0 26;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+					endTell;
+					getTreeDrawCoordinator #mesquite.trees.BasicTreeDrawCoordinator.BasicTreeDrawCoordinator;
+				tell It;
+					suppress;
+					setTreeDrawer  #mesquite.trees.SquareLineTree.SquareLineTree;
+					tell It;
+						setNodeLocs #mesquite.trees.NodeLocsStandard.NodeLocsStandard;
+						tell It;
+							branchLengthsToggle off;
+							toggleScale on;
+							toggleBroadScale off;
+							toggleCenter on;
+							toggleEven on;
+							setFixedTaxonDistance 0;
+						endTell;
+						setEdgeWidth 6;
+						showEdgeLines on;
+						orientRight;
+					endTell;
+					setBackground White;
+					setBranchColor Black;
+					showNodeNumbers off;
+					showBranchColors on;
+					labelBranchLengths off;
+					centerBrLenLabels on;
+					showBrLensUnspecified on;
+					showBrLenLabelsOnTerminals on;
+					setBrLenLabelColor 0 0 255;
+					setNumBrLenDecimals 6;
+					setSelectedTaxonHighlightMode 1;
+					desuppress;
+					getEmployee #mesquite.trees.BasicDrawTaxonNames.BasicDrawTaxonNames;
+					tell It;
+						setColor Black;
+						setTaxonNameStyler  #mesquite.trees.NoColorForTaxon.NoColorForTaxon;
+						toggleShadePartition off;
+						toggleShowFootnotes on;
+						toggleNodeLabels on;
+						toggleCenterNodeNames off;
+						toggleShowNames on;
+						namesAngle ?;
+					endTell;
+				endTell;
+					setTreeNumber 1;
+					setDrawingSizeMode 0;
+					toggleLegendFloat on;
+					scale 0;
+					toggleTextOnTree off;
+					togglePrintName off;
+					showWindow;
+					newAssistant  #mesquite.ancstates.TraceCharacterHistory.TraceCharacterHistory;
+				tell It;
+					suspend ;
+					setDisplayMode  #mesquite.ancstates.ShadeStatesOnTree.ShadeStatesOnTree;
+					tell It;
+						toggleLabels off;
+						togglePredictions off;
+						toggleGray off;
+					endTell;
+					setHistorySource  #mesquite.ancstates.RecAncestralStates.RecAncestralStates;
+					tell It;
+						getCharacterSource  #mesquite.charMatrices.CharSrcCoordObed.CharSrcCoordObed;
+						tell It;
+							setCharacterSource #mesquite.charMatrices.StoredCharacters.StoredCharacters;
+							tell It;
+								setDataSet #2963454444014086272;
+							endTell;
+						endTell;
+						setMethod  #mesquite.parsimony.ParsAncestralStates.ParsAncestralStates;
+						tell It;
+							setModelSource  #mesquite.parsimony.CurrentParsModels.CurrentParsModels;
+							toggleMPRsMode off;
+						endTell;
+						toggleShowSelectedOnly off;
+					endTell;
+					setCharacter 1;
+					setMapping 1;
+					toggleShowLegend on;
+					setColorMode 0;
+					toggleWeights on;
+					setInitialOffsetX 20;
+					setInitialOffsetY 320;
+					setLegendWidth 142;
+					setLegendHeight 129;
+					resume ;
+				endTell;
+				endTell;
+				desuppressEPCResponse;
+				getEmployee #mesquite.trees.ColorBranches.ColorBranches;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.ornamental.BranchNotes.BranchNotes;
+				tell It;
+					setAlwaysOn off;
+				endTell;
+				getEmployee #mesquite.ornamental.ColorTreeByPartition.ColorTreeByPartition;
+				tell It;
+					colorByPartition off;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocDoubles.DrawTreeAssocDoubles;
+				tell It;
+					setOn on;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					setDigits 4;
+					setThreshold ?;
+					writeAsPercentage off;
+					toggleCentred off;
+					toggleHorizontal on;
+					toggleWhiteEdges on;
+					toggleShowOnTerminals on;
+					setFontSize 10;
+					setOffset 0  0;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocStrings.DrawTreeAssocStrings;
+				tell It;
+					setOn on;
+					toggleCentred on;
+					toggleHorizontal on;
+					setFontSize 10;
+					setOffset 0  0;
+					toggleShowOnTerminals on;
+				endTell;
+				getEmployee #mesquite.trees.TreeInfoValues.TreeInfoValues;
+				tell It;
+					panelOpen false;
+				endTell;
+			endTell;
+			makeTreeWindow #746008080270957385  #mesquite.trees.BasicTreeWindowMaker.BasicTreeWindowMaker;
+			tell It;
+				suppressEPCResponse;
+				setTreeSource  #mesquite.trees.StoredTrees.StoredTrees;
+				tell It;
+					setTreeBlock 2;
+					setTreeBlockID 0190f55a593e28;
+					toggleUseWeights off;
+				endTell;
+				setAssignedID 3374.1722103264900.5890660873266553417;
+				getTreeWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1361 974;
+					setLocation 0 26;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+					endTell;
+					getTreeDrawCoordinator #mesquite.trees.BasicTreeDrawCoordinator.BasicTreeDrawCoordinator;
+				tell It;
+					suppress;
+					setTreeDrawer  #mesquite.trees.SquareLineTree.SquareLineTree;
+					tell It;
+						setNodeLocs #mesquite.trees.NodeLocsStandard.NodeLocsStandard;
+						tell It;
+							branchLengthsToggle off;
+							toggleScale on;
+							toggleBroadScale off;
+							toggleCenter on;
+							toggleEven on;
+							setFixedTaxonDistance 0;
+						endTell;
+						setEdgeWidth 6;
+						showEdgeLines on;
+						orientRight;
+					endTell;
+					setBackground White;
+					setBranchColor Black;
+					showNodeNumbers off;
+					showBranchColors on;
+					labelBranchLengths off;
+					centerBrLenLabels on;
+					showBrLensUnspecified on;
+					showBrLenLabelsOnTerminals on;
+					setBrLenLabelColor 0 0 255;
+					setNumBrLenDecimals 6;
+					setSelectedTaxonHighlightMode 1;
+					desuppress;
+					getEmployee #mesquite.trees.BasicDrawTaxonNames.BasicDrawTaxonNames;
+					tell It;
+						setColor Black;
+						setTaxonNameStyler  #mesquite.trees.NoColorForTaxon.NoColorForTaxon;
+						toggleShadePartition off;
+						toggleShowFootnotes on;
+						toggleNodeLabels on;
+						toggleCenterNodeNames off;
+						toggleShowNames on;
+						namesAngle ?;
+					endTell;
+				endTell;
+					setTreeNumber 1;
+					setDrawingSizeMode 0;
+					toggleLegendFloat on;
+					scale 0;
+					toggleTextOnTree off;
+					togglePrintName off;
+					showWindow;
+					newAssistant  #mesquite.ancstates.TraceCharacterHistory.TraceCharacterHistory;
+				tell It;
+					suspend ;
+					setDisplayMode  #mesquite.ancstates.ShadeStatesOnTree.ShadeStatesOnTree;
+					tell It;
+						toggleLabels off;
+						togglePredictions off;
+						toggleGray off;
+					endTell;
+					setHistorySource  #mesquite.ancstates.RecAncestralStates.RecAncestralStates;
+					tell It;
+						getCharacterSource  #mesquite.charMatrices.CharSrcCoordObed.CharSrcCoordObed;
+						tell It;
+							setCharacterSource #mesquite.charMatrices.StoredCharacters.StoredCharacters;
+							tell It;
+								setDataSet #7869334369123821869;
+							endTell;
+						endTell;
+						setMethod  #mesquite.parsimony.ParsAncestralStates.ParsAncestralStates;
+						tell It;
+							setModelSource  #mesquite.parsimony.CurrentParsModels.CurrentParsModels;
+							toggleMPRsMode off;
+							getEmployee #mesquite.parsimony.ParsimonySquared.ParsimonySquared;
+							tell It;
+								toggleWeight on;
+							endTell;
+						endTell;
+						toggleShowSelectedOnly off;
+					endTell;
+					setCharacter 1;
+					setMapping 1;
+					toggleShowLegend on;
+					setColorMode 0;
+					toggleWeights on;
+					setInitialOffsetX 20;
+					setInitialOffsetY 4;
+					setLegendWidth 142;
+					setLegendHeight 129;
+					resume ;
+				endTell;
+				endTell;
+				desuppressEPCResponse;
+				getEmployee #mesquite.trees.ColorBranches.ColorBranches;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.ornamental.BranchNotes.BranchNotes;
+				tell It;
+					setAlwaysOn off;
+				endTell;
+				getEmployee #mesquite.ornamental.ColorTreeByPartition.ColorTreeByPartition;
+				tell It;
+					colorByPartition off;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocDoubles.DrawTreeAssocDoubles;
+				tell It;
+					setOn on;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					setDigits 4;
+					setThreshold ?;
+					writeAsPercentage off;
+					toggleCentred off;
+					toggleHorizontal on;
+					toggleWhiteEdges on;
+					toggleShowOnTerminals on;
+					setFontSize 10;
+					setOffset 0  0;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocStrings.DrawTreeAssocStrings;
+				tell It;
+					setOn on;
+					toggleCentred on;
+					toggleHorizontal on;
+					setFontSize 10;
+					setOffset 0  0;
+					toggleShowOnTerminals on;
+				endTell;
+				getEmployee #mesquite.trees.TreeInfoValues.TreeInfoValues;
+				tell It;
+					panelOpen false;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #2963454444014086272 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 249;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1361 974;
+					setLocation 0 26;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+			showDataWindow #7869334369123821869 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1361 974;
+					setLocation 0 26;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.cont.ItemsEditorForInfoPanel.ItemsEditorForInfoPanel;
+				tell It;
+					panelOpen false;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

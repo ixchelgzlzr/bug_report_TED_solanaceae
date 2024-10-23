@@ -1,0 +1,45 @@
+# MODEL 1:
+# 134 spp, constant diversif and fossilization, UCLN, plus backbone and two constraints
+#seed(444103)
+seed(54431262155)
+
+# the data directory
+data_dir = "data/"
+
+# the constrains file
+# we are trying different constrains systems
+constraints = "clade_constraints"
+
+# tree model
+diversification_model = "constant"
+fossilization_model   = "constant"
+
+# molecular model
+mole_clock_model = "UCLN"
+substn_model     = "GTR_G"
+
+# morphological model
+morph_clock_model = "linked"
+morph_model       = "Mk_G"
+
+# continuous evolution models
+#cont_model = "brownian_unlinked_global"
+
+# the type of analysis
+analysis = "MCMC_test"
+
+# the output directory
+output_dir      = "output/"
+output_extra    = "_1"
+output_filename = output_dir + "/div_"  + diversification_model +
+                               "_foss_" + fossilization_model +
+                              "_moleclock_" + mole_clock_model +
+                              "_moleQ_" + substn_model +
+                              "_morphclock_" + morph_clock_model +
+                              "_morphQ_" + morph_model +
+                              "_" + analysis + output_extra + "/"
+
+# source the template file
+source("modules/template_backbone_clade_const_nocont.Rev")
+
+q()
