@@ -1,0 +1,13 @@
+The code is modular, each component of the model has it's own folder.
+
+Please run the analyses from the main directory. All the analysis are called from the folder headers. You can modify outputs and submodels there
+
+# to run the TED analysis including continuos data:
+rb headers/MCMC/model_TED_w_backbone_const090624.Rev 
+
+# to run the TED analysis without continuos data:
+rb headers/MCMC/model_TED_w_backbone_const_nocont_090624.Rev 
+
+# to run the unrooted analysis with all the data:
+rb headers/MCMC/unrooted_all_data_mole_scaler.Rev 
+

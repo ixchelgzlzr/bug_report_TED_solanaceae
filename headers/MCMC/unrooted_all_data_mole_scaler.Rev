@@ -28,8 +28,8 @@ cont_model = "brownian_for_uniform_scaler"
 analysis = "MCMC_uniform"
 
 # the output directory
-output_dir      = "output_examples/noTD_alldata_scaler/"
-output_extra    = "_2"
+output_dir      = "output/noTD_alldata_scaler/"
+output_extra    = "_1"
 output_filename = output_dir + "_moleQ_" + substn_model +
                               "_morphQ_" + morph_model +
                               "_" + analysis + output_extra + "/"

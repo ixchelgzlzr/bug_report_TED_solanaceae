@@ -29,7 +29,7 @@ morph_model       = "Mk_G"
 analysis = "MCMC_test"
 
 # the output directory
-output_dir      = "output/"
+output_dir      = "output/TED_NoCont/"
 output_extra    = "_1"
 output_filename = output_dir + "/div_"  + diversification_model +
                                "_foss_" + fossilization_model +

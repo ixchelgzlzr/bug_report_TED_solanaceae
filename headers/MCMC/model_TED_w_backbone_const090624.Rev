@@ -35,7 +35,7 @@ cont_model = "brownian_unlinked_global"
 analysis = "MCMC_test"
 
 # the output directory
-output_dir      = "output/"
+output_dir      = "output/TED_WithCont/"
 output_extra    = "_1"
 output_filename = output_dir + "/div_"  + diversification_model +
                                "_foss_" + fossilization_model +
